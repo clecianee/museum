@@ -22,15 +22,21 @@
     </div>
 
     <div class="pageBody">
-      <div class="submenu">
-        <button onclick="showSection('archaeology')">Archaeology</button>
-        <button onclick="showSection('anthropology')">Anthropology</button>
-        <button onclick="showSection('history')">History</button>
-        <p>The content in this gallery was created by AI under human directions. It was then curated, reviewed, and edited by human before being published.</p>
-      </div>
+
 
       <main>
-        <section id="archaeology" class="collection">
+        <div class="belowHeader">
+          <div class="submenu">
+            <p>The content in this gallery was created by AI under human directions. It was then curated, reviewed, and edited by human before being published.</p><br>
+          </div>
+          <div class="submenuButtons">
+            <button onclick="showSection('archaeology')">Archaeology</button>
+            <button onclick="showSection('anthropology')">Anthropology</button>
+            <button onclick="showSection('history')">History</button>
+          </div>
+        </div>
+
+        <section id="archaeology" class="collection" style="display: none;">
           <h2>Archaeology</h2><br>
 
           <div class="firstArchItem">
@@ -90,37 +96,38 @@
 
           </div>
 
-            <br><br>
+          <br><br>
 
-            <div class="thirdArchItem">
-              <div class="thirdArchImg">
-                <img src="../images/collections/archaeology/obsidian-knife.png" title="Acheulean Handaxe" width="200px">
+          <div class="thirdArchItem">
+            <div class="thirdArchImg">
+              <img src="../images/collections/archaeology/obsidian-knife.png" title="Acheulean Handaxe" width="200px">
+            </div>
+            <div class="thirdArchInfo">
+              <div class="infoOne">
+                <p><b>Name:</b> Acheulean Handaxe<br>
+                <b>Material:</b> Fine-grained flint (chert) with natural silica inclusions<br>
+                <b>Size/Weight/Shape:</b> Approx. 18 cm in length, 9 cm in width, and weighing ~850 g; teardrop-shaped with a broad base tapering to a pointed tip<br>
+                <b>Physical Properties:</b> Hard, brittle stone with a mottled gray-brown color; surface shows both sharp flake scars and smoothed, weathered edges; irregular patina from long-term exposure<br>
+                <b>Estimated Age:</b> Circa 500,000-400,000 years old, inferred from stratigraphic context in a Middle Pleistocene sediment layer<br>
+                <b>Preservation State:</b> Complete but heavily worn; edges dulled from centuries of natural abrasion; minor surface fractures present<br>
+                <b>Location Found:</b> Recovered from an open-air site near Olorgesailie, Kenya (approx. 1°35'S, 36°27'E), within an ancient river terrace deposit</p><br>
               </div>
-              <div class="thirdArchInfo">
-                <div class="infoOne">
-                  <p><b>Name:</b> Acheulean Handaxe<br>
-                  <b>Material:</b> Fine-grained flint (chert) with natural silica inclusions<br>
-                  <b>Size/Weight/Shape:</b> Approx. 18 cm in length, 9 cm in width, and weighing ~850 g; teardrop-shaped with a broad base tapering to a pointed tip<br>
-                  <b>Physical Properties:</b> Hard, brittle stone with a mottled gray-brown color; surface shows both sharp flake scars and smoothed, weathered edges; irregular patina from long-term exposure<br>
-                  <b>Estimated Age:</b> Circa 500,000-400,000 years old, inferred from stratigraphic context in a Middle Pleistocene sediment layer<br>
-                  <b>Preservation State:</b> Complete but heavily worn; edges dulled from centuries of natural abrasion; minor surface fractures present<br>
-                  <b>Location Found:</b> Recovered from an open-air site near Olorgesailie, Kenya (approx. 1°35'S, 36°27'E), within an ancient river terrace deposit</p><br>
-                </div>
-                <div class="infoTwo">
-                <p><b>Likely Purpose:</b> Multi-purpose tool — likely used for butchering animals, woodworking, and digging for tubers<br>
-                <b>Evidence of Use:</b> Microscopic wear analysis shows polish and micro-chipping along the edges; residue traces of plant fibers and animal bone fragments detected<br>
-                <b>Manufacture Clues:</b> Bifacial knapping with controlled percussion flaking; large primary flakes removed first, followed by finer retouch to refine the edges; no hafting — handheld use only<br>
-                <b>Found With:</b> Associated with other large cutting tools, unmodified cobbles, and faunal remains bearing cut marks<br>
-                <b>Burial or Habitat Context:</b> Discovered in a sediment layer formed by slow riverbank deposition, later covered by volcanic ash and silt<br>
-                <b>Symbolism:</b> Likely functional rather than symbolic, but its symmetry may reflect early cognitive awareness of form and efficiency<br>
-                <b>Comparison:</b> Comparable in size and workmanship to other Late Acheulean handaxes from East African sites, but with slightly more refined flaking indicative of advanced knapping skill</p>
-                </div>
+              <div class="infoTwo">
+              <p><b>Likely Purpose:</b> Multi-purpose tool — likely used for butchering animals, woodworking, and digging for tubers<br>
+              <b>Evidence of Use:</b> Microscopic wear analysis shows polish and micro-chipping along the edges; residue traces of plant fibers and animal bone fragments detected<br>
+              <b>Manufacture Clues:</b> Bifacial knapping with controlled percussion flaking; large primary flakes removed first, followed by finer retouch to refine the edges; no hafting — handheld use only<br>
+              <b>Found With:</b> Associated with other large cutting tools, unmodified cobbles, and faunal remains bearing cut marks<br>
+              <b>Burial or Habitat Context:</b> Discovered in a sediment layer formed by slow riverbank deposition, later covered by volcanic ash and silt<br>
+              <b>Symbolism:</b> Likely functional rather than symbolic, but its symmetry may reflect early cognitive awareness of form and efficiency<br>
+              <b>Comparison:</b> Comparable in size and workmanship to other Late Acheulean handaxes from East African sites, but with slightly more refined flaking indicative of advanced knapping skill</p>
               </div>
             </div>
+          </div>
+
         </section>
 
-        <section id="anthropology" class="collection">
-          <h2>Anthropology</h2>
+        <section id="anthropology" class="collection" style="display: none;">
+          <h2>Anthropology</h2><br>
           <div class="firstAnthItem">
             <div class="firstAnthImg">
               <img src="../images/collections/anthropology/clay-sculptures.png" title="Clay Sculptures" width="200px">
@@ -140,14 +147,86 @@
                 <p><b>Likely Purpose:</b> Figurines - ritual or symbolic use, possibly ancestor effigies or totems; Bowl - utilitarian or ceremonial, perhaps for holding offerings or food during rituals<br>
                 <b>Evidence of Use:</b> Bowl interior shows abrasion and discoloration, suggesting repeated use with liquids or ground substances; Figurines have smoothed surfaces in certain areas, consistent with handling or rubbing during ceremonies<br>
                 <b>Manufacture Clues:</b> Figurines carved with rudimentary stone chisels, leaving irregular tool marks; Bowl hand-formed using simple coiling method, fired at low temperatures in an open hearth<br>
-                <b>Found With:</b> Charred bone fragments, chipped flint blades, and ochre-stained stones
-                <b>Burial or Habitat Context:</b> Discovered in a collapsed shelter area, partially covered by alluvial sediment from ancient flooding
-                <b>Symbolism:</b> Exaggerated head-to-body proportions and minimalist features may signify spiritual or supernatural representation rather than literal depictions
-                <b>Comparison:</b> Resembles anthropomorphic figurines from early Levantine and Anatolian sites, though in a far more eroded state, possibly due to prolonged environmental exposure</p>
+                <b>Found With:</b> Charred bone fragments, chipped flint blades, and ochre-stained stones<br>
+                <b>Burial or Habitat Context:</b> Discovered in a collapsed shelter area, partially covered by alluvial sediment from ancient flooding<br>
+                <b>Symbolism:</b> Exaggerated head-to-body proportions and minimalist features may signify spiritual or supernatural representation rather than literal depictions<br>
+                <b>Comparison:</b> Resembles anthropomorphic figurines from early Levantine and Anatolian sites, though in a far more eroded state, possibly due to prolonged environmental exposure</p><br>
+              </div>
+            </div>
+          </div>
+
+          <div class="secondAnthItem">
+            <div class="secondAnthImg">
+              <img src="../images/collections/anthropology/Cuneiform-Clay-Tablet.png" title="Clay Tablet" width="200px">
+            </div>
+
+            <div class="secondAnthInfo">
+              <div class="infoOne">
+                <p><b>Name:</b> Ancient Cuneiform Clay Tablet<br>
+                <b>Material:</b> Baked clay (terracotta)<br>
+                <b>Size/Weight/Shape:</b> Rectangular slab, approx. 20-25 cm tall, 12-15 cm wide, 2-3 cm thick; estimated weight 1-1.5 kg<br>
+                <b>Physical Properties:</b> Warm brown hue with granular texture; Worn surface with smoothed edges; Shallow, eroded wedge-shaped inscriptions (cuneiform script); Hard, brittle material with occasional pitting<br>
+                <b>Estimated Age:</b> Approx. 4,000 years old; likely dating to the Sumerian or Akkadian period (c. 2100-1800 BCE) — age inferred from stylistic features and writing style rather than direct carbon dating<br>
+                <b>Preservation State:</b> Complete but heavily worn; inscriptions are partially legible due to erosion and surface abrasion<br>
+                <b>Location Found:</b> Hypothetically from the ancient city of Ur, Mesopotamia (modern-day southern Iraq), near the ruins of a temple archive</p><br>
+              </div>
+              <div class="infoTwo">
+                <p><b>Likely Purpose:</b> Administrative record — possibly documenting trade transactions, grain storage, or temple offerings<br>
+                <b>Evidence of Use:</b> Extensive surface wear from handling or environmental exposure; Slight chipping on corners suggesting repeated movement or storage; No residue detected (would require lab analysis to confirm)<br>
+                <b>Manufacture Clues:</b> Uniform clay thickness suggests mold-forming or careful hand shaping; Parallel horizontal lines used to guide script layout; Baking or sun-drying evident from hardness and color variation<br>
+                <b>Found With:</b> Reportedly found alongside other tablets of varying sizes, some more legible, in a collapsed archive room<br>
+                <b>Burial or Habitat Context:</b> Recovered from a layer of compacted mud-brick debris within a temple-administration complex, likely buried after building collapse<br>
+                <b>Symbolism:</b> The cuneiform script itself may symbolize authority and record-keeping — literacy being a marker of administrative control in ancient Mesopotamia<br>
+                <b>Comparison:</b> Closely resembles tablets from the Ur III period held in the British Museum and the Penn Museum, particularly in script density, size, and clay color</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="thirdAnthItem">
+            <div class="thirdItemImg">
+              <img src="../images/collections/anthropology/Fragment-of-Ancient-Mosaic-Panel.png" title="Mosaic Panel" width="200px">
+            </div>
+
+            <div class="thirdAnthInfo">
+              <div class="infoOne">
+              <p><b>Name:</b> Fragment of Ancient Mosaic Panel<br>
+              <b>Material:</b> Limestone base with inlaid tesserae of stone, glass, and ceramic<br>
+              <b>Size/Weight/Shape:</b> Dimensions: ~40 cm x 28 cm; Thickness: ~5-6 cm; Weight: ~4-5 kg; Rectangular slab with partial semi-circular pattern<br>
+              <b>Physical Properties:</b> Base stone has coarse, porous limestone with multiple surface cracks esserae in muted blue, green, red, yellow, and off-white; Pattern formed in concentric semi-circular bands radiating from a central disc; Significant loss of tesserae, fading pigments, and edge erosion<br>
+              <b>Estimated Age:</b> Approx. 1,700-2,200 years old; likely late Roman period, based on design style and tesserae materials<br>
+              <b>Preservation State:</b> Fragmentary — large cracks across the base, missing portions of the pattern, heavy wear from centuries of exposure<br>
+              <b>Location Found:</b> Hypothetically unearthed from a collapsed bathhouse or villa in North Africa, possibly part of a wall or floor design</p><br>
+              </div>
+
+              <div class="infoTwo">
+              <p><b>Likely Purpose:</b> Decorative architectural element, possibly adorning a public space or luxury residence<br>
+              <b>Evidence of Use:</b> Abrasion marks on tesserae suggest foot traffic if used as flooring; Deposits of mineral salts between stones indicate prolonged contact with moisture<br>
+              <b>Manufacture Clues:</b> Small tesserae (~1-1.5 cm each) cut with precision, likely by trained mosaic artisans; Mortar remnants behind tesserae match Roman lime-based recipes; Pigments indicate trade in colored glass and stone from different regions<br>
+              <b>Found With:</b> Other mosaic fragments, pottery shards, and small bronze fittings consistent with household architecture<br>
+              <b>Burial or Habitat Context:</b> Recovered from a layer of rubble mixed with roof tiles and wall plaster, suggesting destruction during structural collapse<br>
+              <b>Symbolism:</b> The geometric arcs may have been purely decorative or symbolically represent waves, light, or celestial patterns<br>
+              <b>Comparison:</b> Comparable to fragments from Roman North African sites such as Carthage and Dougga, where vibrant geometric floor mosaics were common</p>
               </div>
             </div>
           </div>
         </section>
+
+        <section id="history" class="collection" style="display: none;">
+          <h2>History</h2>
+        </section>
+
+        <script>
+          function showSection(section) {
+            const sections = document.querySelectorAll('.collection');
+            sections.forEach(s => s.style.display = 'none');
+            document.getElementById(section).style.display = 'block';
+          }
+        </script>
+      </main>
+
+    </div>
+    <div class="footer">
+      <p>This is a ficticious website created purely for academic purposes. The content on this site was conceived by a human and created by Al. The Images were created by Al and curated, edited, reviewed, verified, validated, and augmented by a human.</p>
     </div>
 
   </body>

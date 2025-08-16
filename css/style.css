@@ -16,16 +16,33 @@ body {
   padding: 20px;
 }
 
+main {
+  background-color: #989696d2;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 20px;
+  box-shadow: 0 2px 6px #0000001a;
+}
+
+.collection {
+  background-color: #d8d8d8d2; /* this color for all the boxes */
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 20px;
+  box-shadow: 0 2px 6px #0000001a;
+}
+
 /* Shared box styling for all sections */
 .header,
 .intro,
 .moreInfo,
-.footer {
-  background-color: rgba(255, 255, 255, 0.825); /* semi-transparent white */
+.footer,
+.submenu {
+  background-color: #ffffffd2; /* semi-transparent white */
   border-radius: 10px;
   margin-bottom: 20px;
   padding: 20px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 6px #0000001a;
 }
 
 /* First Row: Header with buttons */
@@ -60,6 +77,8 @@ body {
 .header button:hover {
   background-color: #3e5771;
 }
+
+
 
 /* Second Row: Intro paragraph */
 .intro h2 {
@@ -110,7 +129,6 @@ body {
 }
 
 /* for the staff page. */
-
 .firstRow, .secondRow, .thirdRow {
   background-color: #ffffffd2;
   border-radius: 10px;
@@ -133,16 +151,6 @@ body {
   justify-content: center;
 }
 
-.firstArch {
-  background-color: #ffffffd2;
-  display: flex;
-  align-items: flex-start;
-  gap: 20px;
-  padding: 20px;
-  text-align: justify;
-  margin-top: 20px;
-  border-radius: 10px;
-}
 
 /* collections page */
 
@@ -152,13 +160,52 @@ body {
   justify-content: center; 
 }
 
-.submenu {
-  background-color: #ffffffd2;
-  border-radius: 10px;
-  margin-bottom: 20px;
-  padding: 20px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+
+.firstArchItem,
+.secondArchItem,
+.thirdArchItem,
+.firstAnthItem,
+.secondAnthItem,
+.thirdAnthItem,
+.history {
   display: flex;
+  align-items: flex-start;
   gap: 20px;
   text-align: justify;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.belowHeader {
+  display: flex;
+  flex-direction: column; /* stack submenu and buttons vertically */
+  align-items: center;    /* centers everything horizontally */
+  margin: 10px 0;
+}
+
+.submenu {
+  text-align: center;   /* keeps the text centered */
+  margin-bottom: 10px;   /* space between text and buttons */
+}
+
+
+.submenuButtons {
+  display: flex;
+  justify-content: center;  /* puts buttons in one horizontal line */
+  gap: 12px;                 /* adds space between buttons */
+}
+
+.submenuButtons button {
+  padding: 10px 15px;
+  margin-left: 10px;
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submenuButtons button:hover {
+  background-color: #ddd;
 }
