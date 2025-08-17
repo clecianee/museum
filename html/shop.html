@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="Cleciane Oliveira Silva">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Museum Souvenir Shop</title>
+</head>
+
+<body>
+  <header>
+    <div class="shopHeader">
+      <h1>Souvenir Shop</h1>
+    </div>
+
+    <div class="shopButtons">
+      <button onclick="location.href='../index.html'">Home</button>
+      <button onclick="location.href='staff.html'">Staff</button>
+      <button onclick="location.href='collections.html'">Collections</button>
+      <button onclick="location.href='shop.html'">Shop</button>
+    </div>
+  </header>
+
+  <div class="shop-container">
+    <div class="info">
+      <p>
+        The content in this shop was entirely created by AI under human direction. It was then curated, reviewed, and edited by a human before being published.
+      </p>
+    </div>
+    <div class="shopFirstRow">
+      <div class="t-shirt" data-id="item001">
+      <img src="../images/shop/tshirt.png" alt="Stones and Colors T-Shirt" onclick="openModal(this)" width="300px"/>
+      <h3>Museum of Stones and Colors T-Shirt</h3><br>
+      <p>Celebrate the beauty of Earth's natural palette with our exclusive Museum of Stones and Colors T-shirt.<br>
+      Made from 100% soft, breathable cotton, this light gray shirt features the museum's signature logo elegantly printed across the chest. Its minimalist yet striking design makes it perfect for everyday wear while showing your love for art, history, and geology.<br>
+      Unisex fit - comfortable for all body types<br>
+      Durable fabric - retains shape and color wash after wash<br>
+      Eco-friendly printing - designed with sustainability in mind<br>
+      Whether as a gift, a keepsake from your visit, or a staple in your casual wardrobe, this T-shirt lets you carry a piece of the museum's story wherever you go.</p>
+      <p><strong>Price:</strong> $29.00</p>
+      <button onclick="addToCart('item001')">Add T-Shirt to Cart</button>
+      </div>
+
+      <div class="stuffed" data-id="item002">
+      <img src="../images/shop/stuffed-animal.png" alt="Stones and Colors Plush Chameleon" onclick="openModal(this)" width="300px"/>
+      <h3>Museum of Stones and Colors Plush Chameleon</h3><br>
+      <p>Bring home a colorful companion inspired by the natural beauty of stones and minerals.<br>
+      This exclusive plush chameleon is soft, vibrant, and full of charm — designed to reflect the museum's spirit of curiosity and wonder. With its velvety fabric, detailed stitching, and playful design, it makes the perfect keepsake for visitors of all ages.<br>
+      Ultra-soft material - perfect for cuddles and display<br>
+      Durable craftsmanship - built to last through endless adventures<br>
+      Exclusive design - available only at the Museum of Stones and Colors<br>
+      Whether perched on a child's bed or displayed as a collectible, this chameleon is a reminder that nature's colors are always alive.</p>
+      <p><strong>Price:</strong> $19.00</p>
+      <button onclick="addToCart('item002')">Add Plush Chameleon to Cart</button>
+      </div>
+
+      <div class="notebook" data-id="item003">
+      <img src="../images/shop/notebook.png" alt="Stones and Colors Notebook" onclick="openModal(this)" width="300px"/>
+      <h3>Museum of Stones and Colors Notebook</h3><br>
+      <p>Capture your thoughts, sketches, and discoveries in style with our exclusive Museum of Stones and Colors notebook.
+      Featuring a textured beige cover with the museum's logo and stone-inspired artwork, this spiral-bound notebook is both practical and inspiring. Its sturdy design and high-quality paper make it perfect for journaling, note-taking, or recording your own explorations of art and nature.
+      Durable spiral binding - easy to flip and lay flat
+      Premium lined pages - smooth for writing or sketching
+      Exclusive cover design - inspired by the museum's unique collection
+      Whether you're a student, traveler, or dreamer, this notebook keeps the spirit of the museum with you wherever you go.</p>
+      <p><strong>Price:</strong> $19.00</p>
+      <button onclick="addToCart('item003')">Add Notebook to Cart</button>
+      </div>
+
+      <div class="poster" data-id="item004">
+      <img src="../images/shop/poster.png" alt="Stones and Colors Poster" onclick="openModal(this)" width="300px"/>
+      <h3>Museum of Stones and Colors Poster</h3><br>
+      <p>Bring the beauty of the museum into your home with our exclusive Museum of Stones and Colors poster.<br>
+      Printed on high-quality archival paper, this vertical design features the museum's emblem — an abstract gemstone in vibrant, earthy hues — paired with elegant typography. Its minimalist yet striking composition makes it a timeless piece for walls at home, the office, or creative spaces.<br>
+      Archival-quality print - long-lasting colors and details<br>
+      Elegant vertical design - perfect for framing<br>
+      Exclusive artwork - created for the Museum of Stones and Colors<br>
+      Whether displayed as a keepsake from your visit or as a statement piece, this poster captures the harmony of nature's stones and colors.</p>
+      <p><strong>Price:</strong> $19.00</p>
+      <button onclick="addToCart('item004')">Add Poster to Cart</button>
+      </div>
+    </div>
+
+    <div class="shopSecondRow">
+      <div class="mug" data-id="item005">
+        <img src="../images/shop/mug.png" alt="Stones and Colors Mug" onclick="openModal(this)" width="300px"/>
+        <h3>Museum of Stones and Colors Mug</h3><br>
+        <p>Start your day with a touch of art, history, and nature.<br>
+        This ceramic mug features the Museum of Stones and Colors emblem — a vibrant, stone-inspired design that celebrates the beauty of Earth's natural palette. With its smooth finish and sturdy build, it's perfect for your morning coffee, afternoon tea, or as a decorative keepsake.<br>
+        Durable ceramic - dishwasher and microwave safe<br>
+        Vibrant design - inspired by the museum's stone and color collection<br>
+        Exclusive item - available only at the Museum of Stones and Colors<br>
+        Whether at home, in the office, or as a thoughtful gift, this mug is a daily reminder of the museum's harmony between nature and creativity.</p>
+        <p><strong>Price:</strong> $10.00</p>
+        <button onclick="addToCart('item005')">Add Mug to Cart</button>
+      </div>
+
+      <div class="tote-bag" data-id="item006">
+        <img src="../images/shop/tote-bag.png" alt="Stones and Colors Tote Bag" onclick="openModal(this)" width="300px"/>
+        <h3>Museum of Stones and Colors Tote Bag</h3><br>
+        <p>Carry a piece of the museum with you wherever you go.<br>
+        This eco-friendly canvas tote is both durable and stylish, featuring the Museum of Stones and Colors logo beneath a design inspired by vibrant natural stones. Its spacious interior and sturdy handles make it perfect for everyday use — from books and groceries to art supplies and travel essentials.<br>
+        Made from 100% cotton canvas - strong and reusable<br>
+        Spacious design - holds all your daily necessities<br>
+        Exclusive artwork - inspired by the museum's collection<br>
+        Practical, sustainable, and beautifully designed, this tote bag is more than just an accessory — it's a statement piece that reflects your love of art, nature, and culture.</p>
+        <p><strong>Price:</strong> $17.00</p>
+        <button onclick="addToCart('item006')">Add Tote Bag to Cart</button>
+      </div>
+
+      <div class="rubi" data-id="item007">
+        <img src="../images/shop/rubi-replica.png" alt="Stones and Colors Rubi Stone Replica" onclick="openModal(this)" width="300px"/>
+        <h3>Museum of Stones and Colors Rubi Stone Replica</h3><br>
+        <p>Own a brilliant piece of the Earth's story.<br>
+        This museum-quality ruby replica captures the raw beauty of one of nature's most treasured stones. Displayed on a clear acrylic stand, the vibrant pink-red hues shimmer against the stone's natural rough edges, making it both an educational piece and a striking decorative item.<br>
+        Crafted with lifelike detail - mimics the texture and color of natural ruby<br>
+        Mounted on a clear display stand - elegant and ready for exhibition<br>
+        Exclusive to the Museum of Stones and Colors - inspired by specimens in the collection<br>
+        Perfect for collectors, students of geology, or anyone who appreciates the art of the Earth, this replica brings the wonder of gemstones into your home.</p>
+        <p><strong>Price:</strong> $25.00</p>
+        <button onclick="addToCart('item007')">Add Rubi Stone Replica to Cart</button>
+      </div>
+
+      <div class="green-stone" data-id="item008">
+        <img src="../images/shop/green-stone.png" alt="Stones and Colors Green Stone" onclick="openModal(this)" width="300px"/>
+        <h3>Museum of Stones and Colors Green Stone Replica</h3><br>
+        <p>Bring home the calming beauty of Earth's natural palette.<br>
+        This museum-quality green stone replica showcases the vibrant, earthy hues of minerals such as jade or chrysoprase. Resting on a clear acrylic stand, the piece highlights both the stone's polished surface and its rugged, natural edges, creating a striking balance between refinement and authenticity.<br>
+        Lifelike craftsmanship - detailed texture and rich green tones<br>
+        Elegant presentation - mounted on a clear display stand<br>
+        Exclusive design - inspired by the museum's celebrated stone collection<br>
+        Ideal for collectors, geology enthusiasts, or as a decorative centerpiece, this replica reflects the harmony of nature's artistry and the spirit of the Museum of Stones and Colors.</p>
+        <p><strong>Price:</strong> $25.00</p>
+        <button onclick="addToCart('item008')">Add Green Stone Replica to Cart</button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- MODAL -->
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <span class="close-modal" onclick="closeModal()">&times;</span>
+      <img id="modal-image" src="" alt="">
+    </div>
+  </div>
+
+  <script>
+    function addToCart(itemId) {
+      alert("Added " + itemId + " to cart (functionality to come)");
+      // Future: Push to cart array
+    }
+
+    function openModal(imgElement) {
+      const modal = document.getElementById("modal");
+      const modalImage = document.getElementById("modal-image");
+      modalImage.src = imgElement.src;
+      modalImage.alt = imgElement.alt;
+      modal.style.display = "block";
+    }
+
+    function closeModal() {
+      document.getElementById("modal").style.display = "none";
+    }
+
+    // Optional: Close modal on outside click
+    window.onclick = function(event) {
+      const modal = document.getElementById("modal");
+      if (event.target === modal) {
+        closeModal();
+      }
+    }
+  </script>
+  <div class="footer">
+      <p>This is a ficticious website created purely for academic purposes. The content on this site was conceived by a human and created by Al. The Images were created by Al and curated, edited, reviewed, verified, validated, and augmented by a human.</p>
+  </div>
+
+</body>
+</html>
