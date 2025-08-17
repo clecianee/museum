@@ -1,0 +1,298 @@
+/* for all the pages */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-image: url('../images/background/background-image.png' );
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: #1f3517; /* dark green */
+  padding: 20px;
+}
+
+main {
+  background-color: #989696d2;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 20px;
+  box-shadow: 0 2px 6px #0000001a;
+}
+
+.collection {
+  background-color: #d8d8d8d2; /* this color for all the boxes */
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 20px;
+  box-shadow: 0 2px 6px #0000001a;
+}
+
+/* Shared box styling for all sections */
+.header,
+.intro,
+.moreInfo,
+.footer,
+.submenu {
+  background-color: #d8d8d8d2; /* semi-transparent white */
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 20px;
+  box-shadow: 0 2px 6px #0000001a;
+}
+
+/* First Row: Header with buttons */
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.header h1 {
+  color: hsl(210, 29%, 24%); /* dark gray-blue */
+  margin-bottom: 10px;
+}
+
+.header button {
+  padding: 10px 15px;
+  margin-left: 10px;
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.header button:hover {
+  background-color: #3e5771;
+}
+
+
+
+/* Second Row: Intro paragraph */
+.intro h2 {
+  text-align: justify;
+  color: #1f3517;
+  margin-bottom: 10px;
+}
+
+.intro p {
+  color: #1f3517; /* lighter shade of heading */
+  line-height: 1.6;
+}
+
+/* Third Row: 3-column layout */
+.moreInfo {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.moreInfo .first,
+.moreInfo .second,
+.moreInfo .third {
+  flex: 1;
+  min-width: 250px;
+  background-color: #d8d8d8d2; /* slightly more solid */
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.moreInfo h3 {
+  color: #1f3517;
+  margin-bottom: 10px;
+}
+
+.moreInfo p {
+  color: #1f3517;
+  line-height: 1.5;
+}
+
+/* footer for all the pages */
+.footer {
+  text-align: center;
+  font-size: 14px;
+  color: #1f3517;
+}
+
+/* for the staff page. */
+.firstRow, .secondRow, .thirdRow {
+  background-color: #d8d8d8d2;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  text-align: justify;
+}
+
+.secondRow {
+  flex-direction: row-reverse;
+}
+
+.staffButtons {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+
+
+/* collections page */
+
+.collectionsButtons {
+  display: flex;
+  gap: 5px;
+  justify-content: center; 
+}
+
+
+.firstArchItem,
+.secondArchItem,
+.thirdArchItem,
+.firstAnthItem,
+.secondAnthItem,
+.thirdAnthItem,
+.history {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  text-align: justify;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.belowHeader {
+  display: flex;
+  flex-direction: column; /* stack submenu and buttons vertically */
+  align-items: center;    /* centers everything horizontally */
+  margin: 10px 0;
+}
+
+.submenu {
+  text-align: center;   /* keeps the text centered */
+  margin-bottom: 10px;   /* space between text and buttons */
+}
+
+
+.submenuButtons {
+  display: flex;
+  justify-content: center;  /* puts buttons in one horizontal line */
+  gap: 12px;                 /* adds space between buttons */
+}
+
+.submenuButtons button {
+  padding: 10px 15px;
+  margin-left: 10px;
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submenuButtons button:hover {
+  background-color: #ddd;
+}
+
+/* my version for the shop pages */
+
+header {
+  background-color: #d8d8d8d2;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  padding: auto;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.shop-container {
+  background-color: #d8d8d8d2;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: #0000001a;
+  align-items: baseline;
+}
+
+.shop-container button {
+  background-color: #2c3e50;
+  box-shadow: #0000001a;
+  color: white;
+  padding: auto;
+  align-items: center;
+  border-radius: 10px;
+  font-size: large;
+  margin-bottom: 0;
+}
+
+.info {
+  text-align: center;
+}
+
+.shopFirstRow,
+.shopSecondRow {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+}
+
+.t-shirt,
+.stuffed,
+.notebook,
+.poster,
+.mug,
+.tote-bag,
+.rubi,
+.green-stone {
+  margin: 20px;
+  box-sizing: border-box;
+  border-style:solid;
+  border-color: #1f3517;
+  border-radius: 7px;
+  text-align:center;
+}
+
+.shopHeader {
+  
+}
+
+header h1 {
+  color: hsl(210, 29%, 24%); /* dark gray-blue */
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+header button {
+  padding: 10px;
+  margin-bottom: 25px;
+  margin-top: 20px;
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+
+header button:hover {
+  background-color: #3e5771;
+}
+
