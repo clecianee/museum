@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="author" content="Cleciane Oliveira Silva">
     <meta name="robots" content="noindex, nofollow">
-    <neta name="viewport" content="width-device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width-device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="../css/style.css">
     <title>Collections</title>
   </head>
@@ -29,7 +29,8 @@
       <main>
         <div class="belowHeader">
           <div class="submenu">
-            <p>The content in this gallery was created by AI under human directions. It was then curated, reviewed, and edited by human before being published.</p><br>
+            <p>The content in this gallery was entirely created by AI under human direction. It was then curated, reviewed and edited by a human before being published.<br><br>
+            <strong>Click on one of the categories below to see more info.</strong></p>
           </div>
           <div class="submenuButtons">
             <button onclick="showSection('archaeology')">Archaeology</button>
@@ -40,11 +41,35 @@
 
         <section id="archaeology" class="collection" style="display: none;">
           <h2>Archaeology</h2><br>
+          <p>Click the images for more info</p>
 
           <div class="firstArchItem">
             <div class="firstArchImg">
-              <img src="../images/collections/archaeology/Ancient-Canaanite-Ivory-Comb.png" title="Cannanite Ivory Comb" width="200px">
+              <img src="../images/collections/archaeology/Ancient-Canaanite-Ivory-Comb.png" title="Cannanite Ivory Comb" width="200" class="open-modal"   data-modal-target="#modal-text-canaanite-ivory-comb">
             </div>
+          <!-- modal for first item -->
+
+            <div class="modal-item" id="modal-text-canaanite-ivory-comb" hidden>
+              <h2 id="modal-title1">Ivory Lice Comb (Catalog: ivoryLiceComb)</h2><br>
+              <p>Elephant ivory • Tel Lachish, Israel • ca. 1700 BCE
+              Size: \~3.5 x 2.5 cm • Form: dual-sided with coarse and fine teeth
+              Condition: partially worn; several teeth missing</p><br><br>
+
+              <p>Function is secure: The dual-sided design—coarse teeth on one edge, fine teeth on the other—matches its likely purpose of lice removal. This is directly supported by microscopic traces of lice and wear marks on the teeth.
+              Material & making: Crafted from elephant ivory with intricate carvings and inscriptions in early Canaanite script, indicating careful workmanship and the presence of written marking on a household tool.
+              Context: Found in a domestic setting at Tel Lachish with no associated artifacts, suggesting routine personal grooming rather than a ceremonial deposit.
+              Comparative note: Its layout closely resembles modern lice combs, showing long continuity in grooming technologies.</p><br><br>
+              
+              <p>Post-structuralism looks at how objects make meaning through material, language, and use—rather than telling a single fixed story.
+              Bodies & norms: As a lice comb with fine teeth and visible use-wear, this object participates in ideas of clean/unclean and care/neglect inside the home; grooming practices can shape belonging and respectability.
+              Language as power: The early Canaanite inscription (content not evaluated here) gives the comb a public “voice”—perhaps ownership, blessing, or maker's mark—elevating an everyday implement into a text-bearing object.
+              Material & social signaling: Elephant ivory and intricate carving frame grooming as both practical and expressive. Ivory may signal status or taste, but material alone cannot prove rank.</p><br><br>
+
+              <p>We do not know the user, the exact inscription wording, or the owner’s social standing. With no associated artifacts, wider household practices remain uncertain. Interpretations above are grounded in the listed material, wear, context, and inscriptions while avoiding claims the evidence cannot support.<br><br>
+              Prepared by Cultural Historian (M.Sc., Geoarchaeology—University of Arizona; B.Sc., Geology & Anthropology—University of Oregon; RPA; Museum Collections Management certificate; FAA Part 107; WFR; current NAGPRA/§106 & AIC/IPM training).</p>
+            </div>
+
+          <!-- info for first item -->
 
             <div class="firstArchInfo">
               <div class="infoOne">
@@ -72,7 +97,18 @@
 
           <div class="secondArchItem">
             <div class="secondArchImg">
-              <img src="../images/collections/archaeology/serving-bowl.png" title="Painted Ceramic Bowl" width="200px">
+              <img src="../images/collections/archaeology/serving-bowl.png" title="Painted Ceramic Bowl" width="200" class="open-modal" data-modal-target="#modal-text-ceramic-bowl">
+            </div>
+
+            <div class="modal-item" id="modal-text-ceramic-bowl" hidden>
+              <h2 id="modal-title2">Painted Ceramic Bowl (Catalog: paintedCeramicBowl)</h2><br>
+              <p>Earthenware, Kapara Valley tomb context, ca. 2800-2500 BCE. A shallow vessel (\~20 cm Ø x 8 cm h) of reddish-brown clay painted in red and dark-brown geometric banding with wavy lines and triangular motifs. Interior wear and microscopic starch and soot at the base support its utilitarian use for serving or storing food near an open fire; uneven firing marks reflect early ceramic technology.<br><br>
+
+              From a burial setting with associated grave goods, the bowl asks for careful display and consent-based storytelling. In a decolonial museology frame, we read it as both tool and narrative: decoration signals everyday aesthetics within subsistence practices, not simply status. We cross-reference Copper Age motif libraries to trace design continuities and, where appropriate, invite living descendants or cultural memory holders to interpret meanings embedded in pattern and use.<br><br>
+
+              Uncertainties: the maker, owner, exact foods, and specific symbolic meanings of the motifs remain unknown. Preservation: partial, with chipping and damage noted; no over-restoration.<br><br>
+
+              Prepared by a Mythographer (M.A. Public History; B.A. History & Art History; CIP, CIG; AAM Interpretation Certificate; current NAGPRA/§106 & WCAG 2.2 training; CITI certified).</p>
             </div>
 
             <div class="secondArchInfo">
@@ -102,8 +138,22 @@
 
           <div class="thirdArchItem">
             <div class="thirdArchImg">
-              <img src="../images/collections/archaeology/obsidian-knife.png" title="Acheulean Handaxe" width="200px">
+              <img src="../images/collections/archaeology/obsidian-knife.png" title="Acheulean Handaxe" width="200" class="open-modal" data-modal-target="#modal-text-obsidian-knife">
             </div>
+
+            <div class="modal-item" id="modal-text-obsidian-knife" hidden>
+              <h2 id="modal-title3">Obsidian Knife (Catalog: obsidianKnife)</h2><br>
+              <p>Fine-grained flint (chert) with natural silica inclusions; open-air river-terrace near Olorgesailie, Kenya; ca. 500,000-400,000 years old. Teardrop form, \~18 x 9 cm, bifacially knapped; edges dulled by long exposure.<br><br>
+
+              Cultural-semiotic reading: material, form, and wear operate as signs. The chert body and controlled percussion scars express a shared “grammar” of cutting; micro-chipping, edge polish, and residues of plant fibers and animal bone index multipurpose use (butchering, woodworking, digging for tubers). Association with other large cutting tools, unmodified cobbles, and cut-marked fauna situates this piece within a practical, open-air toolkit shaped by river deposition and later ash/silt cover.<br><br>
+
+              Uncertainties & care: Although the catalog name and a contextual note mention obsidian, the listed material is chert; hafting is unresolved—manufacture notes indicate handheld use only. The artifact is complete but heavily worn with minor surface fractures.<br><br>
+
+              For display: collaborate with artists to translate flake-scar rhythms and the teardrop silhouette into light/sound media, while labels clearly separate evidence from inference.<br><br>
+
+              Prepared by a Philosophical Archaeologist (M.A., Bard Graduate Center; B.A., Univ. of Washington; AAM/AAMC/ICOM; current NAGPRA/§106; CITI).</p>
+            </div>
+
             <div class="thirdArchInfo">
               <div class="infoOne">
                 <p><b>Name:</b> Acheulean Handaxe<br>
@@ -130,9 +180,24 @@
 
         <section id="anthropology" class="collection" style="display: none;">
           <h2>Anthropology</h2><br>
+          <p>Click the images for more info</p>
+
           <div class="firstAnthItem">
             <div class="firstAnthImg">
-              <img src="../images/collections/anthropology/clay-sculptures.png" title="Clay Sculptures" width="200px">
+              <img src="../images/collections/anthropology/clay-sculptures.png" title="Clay Sculptures" width="200" class="open-modal" data-modal-target="#modal-text-clay-sculptures">
+            </div>
+
+            <div class="modal-item" id="modal-text-clay-sculptures" hidden>
+              <h2 id="modal-title4">Clay Sculptures (Catalog: claySculpures)</h2><br>
+              <p>Coarse sandstone figurines and a low-fired clay bowl, likely 7,000-8,000 years old. Reported from a river-terrace layer in the Fertile Crescent with charcoal and stone-tool debris. Figurines range \~38-15 cm (one elongated, one seated); bowl \~20 cm, deep with a broken rim. All pieces are poor to partial: figurines heavily pitted with blurred, asymmetrical features; bowl shows cracks, mineral staining, and interior abrasion/discoloration consistent with repeated use. Traces of red ochre/white pigment remain on figurine surfaces. Associated finds include charred bone, chipped flint blades, and ochre-stained stones.<br><br>
+
+              What the evidence supports: The bowl's wear and residue fit utilitarian or ceremonial holding/serving; figurines' smoothed contact areas suggest handling/rubbing. Rudimentary chisel marks on figurines and a simple coiling method for the bowl align with low-temperature firing and early shaping techniques.<br><br>
+
+              Post-Structuralist reading (with care): In this mixed set, use-wear, pigments, and setting act as signs that blur “everyday” and “ritual.” Meanings emerge through touch, materials, and placement, not a single fixed story. We will cross-reference motif and form libraries from early Levantine/Anatolian figurine corpora and—where ethically appropriate—invite cultural memory holders to review display language.<br><br>
+
+              Uncertainties: The provenience is hypothetical, and sources describe figurines as sandstone while narrative notes mention coarse clay; composition remains unconfirmed. Functions (ancestor effigy, totem, offering bowl) are plausible but not proven. Display with attentiveness to potential sacred significance.<br><br>
+
+              Prepared by a Cultural Historian (M.Sc. Geoarchaeology; B.Sc. Geology & Anthropology; RPA; Museum Collections Management; FAA Part 107; WFR; current NAGPRA/§106 & AIC/IPM training).</p>
             </div>
 
             <div class="firstAnthInfo">
@@ -159,7 +224,20 @@
 
           <div class="secondAnthItem">
             <div class="secondAnthImg">
-              <img src="../images/collections/anthropology/Cuneiform-Clay-Tablet.png" title="Clay Tablet" width="200px">
+              <img src="../images/collections/anthropology/Cuneiform-Clay-Tablet.png" title="Clay Tablet" width="200" class="open-modal" data-modal-target="#modal-text-cuneiform-clay-tablet">
+
+            </div>
+
+            <div class="modal-item" id="modal-text-cuneiform-clay-tablet" hidden>
+              <h2 id="modal-title5">Cuneiform Clay Tablet (Catalog: cuneiformClayTablet)</h2><br>
+              <p>Baked clay (terracotta), warm brown with granular texture; worn surface, smoothed edges, and shallow, eroded wedge-shaped inscriptions. Rectangular, \~20-25 x 12-15 x 2-3 cm; complete but heavily worn. Reported from Ur (Mesopotamia) near a temple archive, in compacted mud-brick debris after collapse; found with other tablets. Uniform thickness, horizontal guide lines, and hardness/color variation indicate careful hand shaping and sun- or kiln-baking. Based on script style and archive context, it likely records administrative data (trade, grain, or offerings), though the text is only partially legible and date is stylistically inferred (c. 2100-1800 BCE).<br><br>
+
+              Post-Structuralist reading (myths across civilizations):
+              Here, material + script + archive space act together as a sign-system: clay standardized into lines, numbers, and names to perform a myth of order—that the world is accountable and gifts/obligations circulate under divine oversight. Comparable logics appear in Egyptian temple daybooks (Ma’at as balance) and later Andean quipu record-keeping—not as direct links, but as parallel stories where accounting itself becomes cosmology. Even if this tablet lists grain or rations, its baked clay body and temple context encode authority, memory, and reciprocity.<br><br>
+
+              Uncertainties & care: Content awaits philological confirmation; no residue detected; provenience is hypothetical. We avoid sacred claims and present comparisons as interpretive frames, not facts.<br><br>
+
+              Prepared by a Mythographer (M.A., Bard Graduate Center; B.A., Univ. of Washington; AAM/AAMC/ICOM; current NAGPRA/§106; CITI).</p>
             </div>
 
             <div class="secondAnthInfo">
@@ -186,7 +264,18 @@
 
           <div class="thirdAnthItem">
             <div class="thirdItemImg">
-              <img src="../images/collections/anthropology/Fragment-of-Ancient-Mosaic-Panel.png" title="Mosaic Panel" width="200px">
+              <img src="../images/collections/anthropology/Fragment-of-Ancient-Mosaic-Panel.png" title="Mosaic Panel" width="200" class="open-modal" data-modal-target="#modal-text-mosaic-panel">
+
+            </div>
+
+            <div class="modal-item" id="modal-text-mosaic-panel" hidden>
+              <h2 id="modal-title6">Mosaic Panel (Catalog: mosaicPanel)</h2><br>
+              <p>Limestone base with inlaid tesserae of stone, glass, and ceramic; late Roman-period, c. 1,700-2,200 years old (stylistic inference). Reported from rubble with roof tiles and wall plaster in a North African bathhouse or villa. The fragment is rectangular (\~40 x 28 cm; 5-6 cm thick; \~4-5 kg) with concentric semi-circular bands around a central disc; colors muted blue/green/red/yellow/off-white. Surface cracks in the limestone, edge erosion, missing tesserae, and mineral-salt deposits indicate long moisture exposure; abrasion on tesserae suggests possible foot traffic if this served as flooring. Small, precisely cut tesserae (\~1-1.5 cm) and lime-based mortar remnants point to trained artisans and Roman recipes. Comparisons with mosaics from Carthage/Dougga support the attribution, though exact size varies in reports and wall vs. floor placement remains uncertain.</p><br><br>
+
+              <h3>Cultural-semiotics (toward immersive exhibit):</h3><br>
+              <p>Material and pattern act as signs of order and civic display: a porous limestone support (architecture), imported colored glass/stone (trade networks), and radial geometry (harmonized space). To stage this meaning, pair the fragment with: raking-light reveals of mortar guidelines; a tactile replica tile line for the softened tessera edges; a color-mapping projection restoring faded bands; and an ambient soundscape of tool-on-stone to evoke workshop labor.<br><br>
+
+              Uncertainties & care: Date and function are stylistic/contextual inferences; floor vs. wall unresolved. Present comparisons as interpretive frames, not facts; avoid reconstructing missing imagery beyond documented pattern.</p>
             </div>
 
             <div class="thirdAnthInfo">
@@ -214,38 +303,298 @@
         </section>
 
         <section id="history" class="collection" style="display: none;">
-          <h2>History of the Museum of Stones and Colors</h2><br>
-          <h3>Origins</h3><br>
-          <p>The Museum of Stones and Colors traces its roots back to the late 19th century, when a group of naturalists and artists in Europe began collecting rare minerals not only for their scientific value but also for their aesthetic beauty. Among them was Amélie Duarte, a Portuguese-Brazilian geologist and painter, who believed that stones carried both the memory of the Earth and the poetry of color. Her personal collection of gemstones, pigments, and mineral-inspired artworks became the foundation of what would one day be the museum.</p><br>
-          <h3>Early Development</h3><br>
-          <p>The first official gallery opened in 1903, in a modest space adjoining a botanical conservatory. Unlike traditional mineral collections, which focused on classification and hardness, this museum highlighted the visual experience of stones — their hues, textures, and natural artistry. Visitors often described the exhibits as feeling like stepping into “the Earth's own palette.”<br>
-          During the early 20th century, the museum expanded its holdings through donations from explorers, archaeologists, and indigenous communities who contributed artifacts demonstrating how minerals had been used in tools, trade, and rituals.</p><br>
-          <h3>The Modern Era</h3><br>
-          <p>By the 1960s, the museum was recognized internationally as a bridge between science and art. Its exhibitions began to combine geological specimens with contemporary artworks inspired by natural minerals, establishing a unique interdisciplinary focus.
-          In the 1990s, a new wing dedicated to anthropology and archaeology was added, showcasing how humans across cultures had incorporated stones into jewelry, weapons, religious objects, and daily life. These displays emphasized the symbolic meanings of color in different civilizations — from the sacred use of lapis lazuli in Mesopotamia to the protective jade amulets of Mesoamerica.</p><br>
-          <h3>Today</h3><br>
-          <p>The Museum of Stones and Colors is celebrated worldwide as the only institution dedicated exclusively to the interplay of geology, culture, and color symbolism. Its galleries include:<br>
-          Hall of Earth's Palette - mineral displays organized by color spectrum.<br>
-          Human & Stone - archaeological and anthropological artifacts.<br>
-          Art in Stone - modern and contemporary works inspired by mineral forms.<br>
-          Museum Shop - featuring gemstone-inspired objects, prints, textiles, and educational items.<br>
-          With ongoing research programs and collaborations with universities, the museum continues to honor Amélie Duarte's vision: that stones are not just matter, but memory, color, and meaning intertwined.</p>
+          <div class="ancient-canaanite-ivory-comb-history">
+<!-- ivory comb title -->
+            <h2>Canaanite Ivory Comb</h2><br>
+            <div class="ivory-img-and-info">
+<!-- ivory comb image -->
+              <div class="ivory-comb-history-img">
+                <img src="../images/collections/archaeology/Ancient-Canaanite-Ivory-Comb.png" alt="Ancient Canaanite Ivory Comb" width="200">
+              </div>
+  <!-- info on the right of the pic -->
+              <div class="ivory-comb-pic-details">
+                <h3>Artifact Facts</h3><br>
+                <p>Ivory Lice Comb (ivoryLiceComb)<br>
+                Elephant ivory; Tel Lachish, Israel; ca. 1700 BCE<br>
+                Dimensions: \~3.5 x 2.5 cm, dual-sided (coarse & fine teeth)<br>
+                Condition: Partially worn; several teeth missing<br><br><br></p>
+              </div>
+            </div>
+
+<!-- info below pic -->              
+            <div class="ivoryPicBelow">
+              <h3>What we can say for sure (evidence):</h3><br>
+
+              <p>Form & function: One side had coarse teeth for detangling; the other had fine teeth for removing lice. This is supported by the dual-sided design and microscopic traces of lice, as well as wear marks on the teeth.<br>
+              Material & making: Carved in elephant ivory with intricate surface work and inscriptions in early Canaanite script—clear signs of deliberate craftsmanship.<br>
+              Findspot & context: Recovered from a domestic setting at Tel Lachish with no associated artifacts.<br>
+              Comparative note: Its layout closely resembles modern lice combs, indicating continuity in grooming technology.</p><br><br>
+
+              <h3>“Turning evidence into insight” (post-structuralist reading)</h3><br>
+              <p>Post-structuralism asks how objects produce meaning through materials, words, and everyday practices rather than holding one fixed story.<br>
+              Body & norms: As a lice comb with fine teeth and use-wear, the piece participates in a discourse of clean/unclean and care/neglect. Grooming becomes a way bodies are regulated and social belonging is affirmed.<br>
+              Language & authority: The early Canaanite inscription (content not assessed here) signals how written marks confer identity—ownership, blessing, or maker's pride. Regardless of exact wording, script itself works as a powerful sign, elevating a household tool into a carrier of voice.<br>
+              Material & value: Elephant ivory and intricate carving frame grooming as more than necessity: the comb performs status and taste in the home. That said, ivory alone cannot prove rank; its presence simply opens that possibility.
+              Home as stage: Found in a domestic context and without associated objects, the comb stands as a portable script-bearing artifact that moves between bodies, rooms, and routines—where meaning is made, used, and worn down.<br><br><br></p>
+
+              <h3>Uncertainties & limits</h3><br>
+              <p>We do not know who used it, the exact wording of the inscription, or the social rank of its owner. The absence of associated finds narrows context; interpretations above remain hypotheses grounded in the listed evidence.</p><br>
+
+              <p>Prepared by a Cultural Historian (M.Sc., Geoarchaeology; RPA; Museum Collections Management certificate; FAA Part 107; WFR; current NAGPRA/§106 & AIC/IPM training) for wall label / modal use.</p><br><br>
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="painted-ceramic-bowl-history">
+<!-- ceramic bowl title -->
+            <h2>Prehistoric Serving Bowl</h2><br>
+            <div class="ceramic-bowl-img-and-info">
+<!-- ceramic bowl image -->
+              <div class="painted-ceramic-bowl-history-img">
+                <img src="../images/collections/archaeology/serving-bowl.png" alt="Painted Ceramic Bowl" width="200">
+              </div>
+<!-- info on the right of the pic -->
+              <div class="ceramicBowlPicDetails">
+                <h3>Artifact Facts</h3><br>
+                <p>Painted Ceramic Bowl (Catalog: paintedCeramicBowl)<br>
+                Earthenware; Kapara Valley tomb context<br>
+                Approx. 2800-2500 BCE<br>
+                Dimensions: ~20 cm diameter; ~8 cm height; shallow, round form<br>
+                Condition: partial, with chipping and damage<br><br><br></p>
+              </div>
+            </div>
+
+<!-- info below pic -->
+            <div class="ceramicBowlPicBelow">
+              <p>This shallow vessel was made from reddish-brown clay and painted in red and dark-brown geometric patterns, including faint banding with wavy lines and triangular motifs. The walls are even but not perfectly regular, and uneven firing marks are visible on the surface. These features, together with the coarse temper of the earthenware, point to early ceramic technology rather than later wheel-thrown refinement.<br><br>
+              Evidence on the object indicates everyday use. Interior abrasion and discoloration are consistent with repeated contact with food or liquid. Microscopic residues of starch and soot clustered near the base suggest serving or storing simple meals prepared close to an open fire. While we cannot identify specific ingredients without further lab analysis, the combined wear and residues support a utilitarian function.<br><br>
+              Context helps refine the story. The bowl was recovered from a burial in the Kapara Valley and was reportedly found with other grave goods. Its selection for a tomb may reflect familiarity, care for the deceased, or the practical need to provision the afterlife; the evidence does not permit us to decide among these possibilities. The object is presented with care for its mortuary origin.<br><br>
+              Manufacture and design choices also carried meaning. The painter organized red and dark-brown pigments into geometric bands that animate the surface even where the pattern has faded. Such decoration aligns with Copper Age examples, yet this bowl is more informative for how aesthetics and utility meet: a workaday container whose surface still invited attention.<br><br>
+              Comparanda and dating are inferred rather than measured. The estimated date of 2800-2500 BCE is based on stylistic features, paint palette, and fabric, not radiocarbon testing. Similar bowls are known in regional Copper Age assemblages, but no one-to-one source is claimed.<br><br>
+              Look closely and you may see the story in the details: the thin, shallow profile suited to serving; the concentrated interior wear near the base where contents pooled; and the irregular firing marks that register an ancient hearth's uneven heat. These small clues—material, context, wear, and paint—anchor interpretation while keeping speculation modest.<br><br>
+              Uncertainties remain. The maker and owner are unknown, as are the precise meanings of the painted motifs. We avoid symbolic claims beyond what the material, context, wear, and residues support.<br><br>
+              Display respectfully as a burial good.<br><br></p>
+
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="obsidian-knife-history">
+<!-- obsidian knife title -->
+            <h2>Obsidian Knife</h2><br>
+            <div class="obsidian-knife-img-and-info">
+<!-- obisidian knife image -->
+              <div class="obsidian-knife-history-img">
+                <img src="../images/collections/archaeology/obsidian-knife.png" alt="Obsidian Knife" width="200">
+              </div>
+<!-- info on the right of the pic -->
+              <div class="obsidian-knife-pic-details">
+                <h3>Artifact Facts </h3><br>
+                <p>Obsidian Knife (Catalog: obsidianKnife)<br>
+                Material: Fine-grained flint (chert) with natural silica inclusions<br>
+                Date: Middle Pleistocene, ca. 500,000–400,000 years ago (stratigraphic inference) <br>
+                Findspot: Open-air river-terrace deposit near Olorgesailie, Kenya<br>
+                Dimensions/Weight: \~18 × 9 cm; \~850 g; teardrop form<br>
+                Condition: Complete but heavily worn; edges dulled; minor surface fractures<br><br><br></p>
+              </div>
+            </div>
+
+<!-- info below pic -->
+            <div class="obsidian-knife-pic-below">
+              <p>This large, teardrop-shaped cutting tool was made by bifacial knapping—large primary flakes removed from both faces, followed by finer retouch to refine the perimeter. The mottled gray-brown chert shows a mix of sharp flake scars and smoothed, weathered edges with an irregular patina from long exposure. No hafting grooves or adhesive residues are recorded; manufacture notes indicate handheld use only.<br><br>
+
+              Multiple lines of evidence point to broad utility. Microscopic edge wear displays polish and micro-chipping, and residue sampling detected plant fibers and animal bone fragments along the margins. These traces align with tasks such as butchering, woodworking, and digging for tubers, though specific activities and species cannot be identified here. The artifact was recovered within a slowly accumulated riverbank layer, later covered by volcanic ash and silt, and was associated with other large cutting tools, unmodified cobbles, and faunal remains bearing cut marks—a toolkit context consistent with intensive processing at an open-air locality.<br><br>
+
+              The object's age is based on stratigraphic position and technological comparison to Late Acheulean handaxes from East Africa. Its overall size and workmanship fit that horizon, and the slightly more refined flaking suggests practiced skill; nonetheless, the date remains an inference, not a direct radiometric measurement.<br><br>
+
+              A note on naming: although the catalog title reads “Obsidian Knife,” the recorded material is chert, not volcanic glass. The historical catalog name is retained for inventory continuity; the material identification above reflects the present description.<br><br>
+
+              What to look for: the broad base thinning toward a pointed tip; the balanced, bidirectional flake pattern; and the dulling along high spots where natural abrasion rounded previously sharp edges. Minor surface fractures cross several scars, further evidence of long post-depositional history. Absent are clear hafting scars, reinforcing a handheld grip.<br><br>
+
+              Uncertainties & care: Function is reconstructed from use-wear, residues, and association, not from observation in use. We do not know how many episodes of work the edge records, whether the same individual used it throughout, or how long it circulated before burial. Interpretations here remain within the limits of the material, context, wear, and residues documented for this piece, avoiding claims the evidence cannot securely support.<br><br></p>
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="clay-sculptures-history">
+<!-- clay sculptures title -->
+            <h2>Clay Sculptures</h2><br>
+            <div class="clay-sculptures-img-and-info">
+<!-- clay sculptures img -->
+              <div class="clay-sculptures-history-img">
+                <img src="../images/collections/anthropology/clay-sculptures.png" alt="Clay Sculptures" width="200">
+              </div>
+<!-- info on the right of the pic -->
+              <div class="clay-sculptures-pic-details">
+                <h3>Artifact Facts</h3><br>
+                <p>Clay Sculptures (Catalog: claySculpures)<br>
+                Materials: Figurines in coarse sandstone; low-fired clay bowl<br>
+                Estimated date: 7,000-8,000 years ago (Mesolithic-early Neolithic, inferred)<br>
+                Find context: Open-air river terrace in the Fertile Crescent; layer contained charcoal and stone-tool debris; objects recovered from a collapsed shelter area, partly sealed by alluvial sediment<br>
+                Condition: Poor to partial—heavy surface loss, pitting, cracks; bowl with deep mineral staining and broken rim; figurine features blurred/asymmetrical from weathering<br><br><br></p>
+              </div>
+            </div>
+
+<!-- info below pic -->
+            <div class="clay-sculptures-pic-below">
+              <p>These pieces bring together a small group of early household/ritual objects: anthropomorphic figurines and a deep, round bowl (~20 cm Ø). The figurines, ranging from ~15 cm (seated) to ~38 cm (elongated), show heavily pitted, grainy surfaces typical of coarse sandstone exposed for centuries. Smoothed areas on the figurines—where hands would naturally rest—suggest repeated handling or rubbing. Traces of red ochre and white pigment linger on worn surfaces, likely once accenting facial features or clothing. The bowl's interior abrasion and discoloration indicate repeated use with liquids or ground substances; its low-temperature firing and coiling construction fit early ceramic practice.<br><br>
+
+              Associated finds—charred bone fragments, chipped flint blades, and ochre-stained stones—situate the set within a mixed activity area where food preparation and pigment work occurred. Rudimentary chisel marks on the figurines and the bowl's simple coil build agree with the primitive shaping methods noted for the period.<br><br>
+
+              What these objects did is read from their materials, wear, and context. The bowl's interior wear supports a utilitarian or ceremonial holding/serving role. The figurines' smoothed contact zones and surviving pigment invite a cautious reading as ritual or symbolic items—perhaps ancestor effigies or totems—yet function remains unproven. Comparisons to early Levantine and Anatolian figurines help frame the forms, while this group's more eroded statuette likely reflects longer exposure in an open-air setting.<br><br>
+
+              Uncertainties are part of responsible interpretation. The provenience is described as hypothetical, and sources mention both sandstone figurines and hand-formed clay in the broader narrative; heavy erosion may obscure original surface cues. Meanings of pigments and gestures are undetermined, and no inscriptions are recorded. Ages are inferred, not directly dated.<br><br>
+
+              In display, we treat these works with care for possible sacred significance. Labels distinguish evidence (material, tool marks, wear, residues, context) from interpretation (ritual vs. daily use). Where appropriate, we note comparanda and remain open to community-informed readings, recognizing that touch, pigment, and placement can carry memory as powerfully as text.<br><br></p>
+
+            </div>
+
+          </div>
+
+          <hr>
           
+          <div class="clay-tablet-history">
+<!-- clay tablet title -->
+            <h2>Clay Tablet</h2><br>
+            <div class="clay-tablet-img-and-info">
+<!-- clay tablet image -->
+              <div class="clay-tablet-history-img">
+                <img src="../images/collections/anthropology/Cuneiform-Clay-Tablet.png" alt="Clay Tablet" width="200">
+              </div>
+<!-- info on the right of the pic -->
+              <div class="clay-tablet-pic-details">
+                <h3>Cuneiform Clay Tablet (Catalog: cuneiformClayTablet)</h3><br>
+                <p>Material: Baked clay (terracotta) Date: ca. 2100-1800 BCE (stylistic inference)<br>
+                Findspot: Hypothetically from Ur, Mesopotamia (southern Iraq), near a temple archive<br>
+                Dimensions: Rectangular slab, approx. 20-25 x 12-15 x 2-3 cm; c. 1-1.5 kg<br>
+                Condition: Complete but heavily worn; inscriptions partially legible; smoothed edges and corner chips<br><br><br></p>
+              </div>
+            </div>
+
+<!-- info below pic -->
+          <div class="clay-tablet-pic-below">
+            <p>This warm brown tablet preserves one of the world's earliest writing systems: cuneiform, made by pressing a reed stylus into soft clay. The uniform thickness and parallel horizontal guide lines suggest mold-forming or careful hand shaping to standardize the writing surface. After inscription, the clay was sun-dried or kiln-baked, a process reflected in its hardness and subtle color variation. The surface shows granular texture, occasional pitting, and shallow, eroded wedge-shaped signs from long exposure and handling.<br><br>
+
+            Though the text is only partially legible, the tablet's archive context and script density indicate an administrative record—likely lists tied to trade transactions, grain storage, or temple offerings. Slight corner chipping points to repeated shelving or movement within a store room; no organic residues are reported (a lab analysis would be required to confirm their absence). The piece was reportedly found with other tablets of varying sizes in compacted mud-brick debris from a collapsed building in a temple-administration complex, a setting consistent with organized recordkeeping.<br><br>
+
+            The tablet's late Sumerian/Akkadian period attribution rests on stylistic features (sign shapes, layout, and overall format) and comparisons with tablets from the Ur III horizon—examples in the British Museum and Penn Museum show similar clay color, size range, and lineation. Such parallels help frame date and function but do not substitute for a full philological reading.<br><br>
+
+            <b>What to look for:</b><br>
+            • The faint ruled lines organizing the text into registers.<br>
+            • Variations in wedge depth and angle, evidence of the scribe's hand and reed tool.<br>
+            • Edge smoothing and abrasion that soften once-crisp signs.<br><br>
+
+            Uncertainties & care: The provenience is hypothetical, and the exact content awaits expert translation; the date is inferred, not radiometrically measured. We avoid sacred or literary claims beyond what the material, layout, wear, and find context support. Presented here as both a practical tool of governance and a durable carrier of memory, the tablet invites us to see how clay, counting, and authority were shaped together into text—and how that text, even in fragmentary form, still speaks of communal obligations across four millennia.<br><br></p>
+
+          </div>
+          </div>
+
+          <hr>
+
+          <div class="mosaic-panel-history">
+<!-- mosaic panel title -->
+            <h2>Mosaic Panel</h2><br>
+            <div class="mosaic-panel-img-and-info">
+<!-- mosaic panel image-->
+              <div class="mosaic-panel-history-img">
+                <img src="../images/collections/anthropology/Fragment-of-Ancient-Mosaic-Panel.png" alt="Mosaic Panel" width="200">
+              </div>
+<!-- info on the right of the pic -->
+              <div class="mosaic-panel-pic-details">
+                <h3>Mosaic Panel (Catalog: mosaicPanel)</h3><br>
+                <p>Limestone base with inlaid tesserae of stone, glass, and ceramic<br>
+                Late Roman period (approx. 1,700–2,200 years old; stylistic inference)<br>
+                Reported context: rubble from a collapsed bathhouse or villa in North Africa<br><br><br></p>
+              </div>
+            </div>
+
+<!-- info below pic -->
+            <div class="mosaic-panel-pic-below">
+              <p>This fragment preserves part of a geometric design built from small tesserae—roughly 1-1.5 cm cubes—set into a coarse, porous limestone base. The surviving pattern forms concentric semi-circular bands that radiate from a central disc. Tesserae in muted blue, green, red, yellow, and off-white still read as ordered fields of color despite missing sections, edge erosion, and faded pigments. At the edges and across several fissures, the base stone shows surface cracks, evidence of both ancient structural stress and long exposure.<br><br>
+              Material and wear hint at how this panel functioned. Abrasion on tesserae suggests foot traffic if the piece once formed part of a floor; conversely, the semi-circular bands and central medallion could also have animated a wall niche. Deposits of mineral salts between tesserae point to prolonged contact with moisture—common in bath complexes and coastal villas. Lime-based mortar remnants on the back and in joints align with Roman construction recipes, and the precision of the cuts signals trained artisans working to a pre-planned layout.<br><br>
+              The panel's approximate dimensions (~40 x 28 cm; thickness ~5-6 cm; ~4-5 kg) and its rectangular slab format indicate a detached fragment of a larger program. Comparisons with mosaics from Carthage and Dougga help frame this attribution to Roman North Africa, where geometric floors and floral accents were common. Such parallels are comparative, not proofs of a specific workshop.<br><br>
+              What you can look for here: the softened tessera edges where feet or cleaning tools once passed; the color contrasts that still give depth to the radiating bands; and faint lines of setting mortar that reveal how rows were guided to keep the pattern symmetrical.<br><br>
+              Uncertainties & care: The reported findspot is hypothetical, and floor versus wall placement remains unresolved. The date rests on style and materials rather than direct scientific dating. Our interpretation stays within what the materials, pattern, mortar, and wear support. We avoid reconstructing missing imagery beyond the documented concentric motif.<br><br>
+              As a fragment of domestic or public décor, this mosaic speaks to the social value of patterned space: traded colored glass and stone, skilled labor, and architectural planning working together to make rooms legible and luminous. Even in its worn state, the panel records that collaboration—stone by stone, line by line.<br><br></p>
+
+            </div>
+          </div>
         </section>
 
-        <script>
-          function showSection(section) {
-            const sections = document.querySelectorAll('.collection');
-            sections.forEach(s => s.style.display = 'none');
-            document.getElementById(section).style.display = 'block';
-          }
-        </script>
-      </main>
 
+      </main>
     </div>
     <div class="footer">
       <p>This is a ficticious website created purely for academic purposes. The content on this site was conceived by a human and created by Al. The Images were created by Al and curated, edited, reviewed, verified, validated, and augmented by a human.</p>
     </div>
+
+      <!-- modal code blocks -->
+
+    <div class="modal-item" id="modal-text-glyphstone" hidden>
+      <h2 id="modal-title">Basaltic Glyphstone — Collection Note</h2>
+      <p>Another item's text…</p>
+    </div>
+
+
+    <!-- keep your existing overlay + .modal/.modal-content styles -->
+    <div class="modal" id="modal" style="display:none" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal-content">
+        <button class="close-modal" aria-label="Close">x</button>
+          <div id="modal-body"></div>  <!-- text gets injected inside the div -->
+      </div>
+    </div> 
+
+    <script> // for tabs category navigation
+    function showSection(section) {
+    const sections = document.querySelectorAll('.collection');
+    sections.forEach(s => s.style.display = 'none');
+    document.getElementById(section).style.display = 'block';
+    }
+    </script> 
+
+    <script> // for actaving the modal for each image
+      (function(){
+      const modal      = document.getElementById('modal');
+      const modalBody  = document.getElementById('modal-body');
+      const closeBtn   = modal.querySelector('.close-modal');
+      let lastTrigger  = null;
+
+      function openFrom(selector, trigger){
+      const src = document.querySelector(selector);
+      if (!src) { console.warn('Missing modal content:', selector); return; }
+      modalBody.innerHTML = src.innerHTML;        // inject text HTML
+      modal.style.display = 'block';
+      lastTrigger = trigger || null;
+      closeBtn.focus();
+      document.body.style.overflow = 'hidden';    // no scroll under modal
+    }
+
+      function closeModal(){
+      modal.style.display = 'none';
+      modalBody.innerHTML = '';
+      document.body.style.overflow = '';
+      if (lastTrigger) lastTrigger.focus();
+    }
+
+    // open on any element with data-modal-target
+      document.addEventListener('click', (e)=>{
+      const trigger = e.target.closest('[data-modal-target]');
+      if (trigger){
+       e.preventDefault();
+        openFrom(trigger.getAttribute('data-modal-target'), trigger);
+        return;
+      }
+      if (e.target === modal || e.target.closest('.close-modal')) closeModal();
+      });
+
+      document.addEventListener('keydown', (e)=>{
+      if (e.key === 'Escape' && modal.style.display === 'block') closeModal();
+      });
+      })();
+</script>
 
   </body>
 </html>

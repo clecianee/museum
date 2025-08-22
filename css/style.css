@@ -296,3 +296,28 @@ header button:hover {
   background-color: #3e5771;
 }
 
+
+/* modal */
+#modal {
+  position: fixed; inset: 0; display: none;
+  background: rgba(0,0,0,.6);
+  
+}
+#modal .modal-content {
+  max-width: 640px; margin: 6vh auto; background: #fff; padding: 1.25rem; border-radius: 10px;
+}
+#modal .close-modal { float: right; font-size: 1.25rem; }
+.gallery-img { cursor: pointer; }
+
+/*for the history page */
+.ivory-img-and-info,
+.ceramic-bowl-img-and-info,
+.obsidian-knife-img-and-info,
+.clay-sculptures-img-and-info,
+.clay-tablet-img-and-info,
+.mosaic-panel-img-and-info {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem 1.25rem;
+  align-items: center;
+}
